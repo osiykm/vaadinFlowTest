@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'org.gretty' version '2.3.1'
+    id 'com.devsoap.vaadin-flow' version '1.0.0.RC6'
+    id 'application'
+}
+
+group 'com.osiykm'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+vaadin.autoconfigure()
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
